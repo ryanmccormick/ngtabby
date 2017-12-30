@@ -1,10 +1,13 @@
-import { NgTabbyDirective } from './ng-tabby.directive';
-import { Component, DebugElement } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
+
+import { NgTabbyDirective } from './ng-tabby.directive';
 import { NGTDEFAULTS } from './shared/ng-tabby.settings';
 
-
+/**
+ * Directive Mock test component.
+ */
 @Component({
   template: `
     <div>
@@ -18,7 +21,6 @@ import { NGTDEFAULTS } from './shared/ng-tabby.settings';
     </div>`
 })
 export class TestNgTabbyComponent { }
-
 
 describe('NgTabbyDirective', () => {
   let component: TestNgTabbyComponent;
