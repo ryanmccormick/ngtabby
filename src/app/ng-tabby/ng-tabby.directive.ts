@@ -38,7 +38,7 @@ export class NgTabbyDirective implements OnInit, AfterViewInit {
     this.setNgTabby(value);
   }
 
-  setNgTabby(value: NgTabbySettings) {
+  setNgTabby(value: NgTabbySettings): void {
     const settings = Object.assign({}, NGTDEFAULTS, value);
     this._ngTabby = settings;
   }
