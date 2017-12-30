@@ -1,16 +1,7 @@
 import { AfterViewInit, Directive, ElementRef, Input, OnInit, Renderer2 } from '@angular/core';
-
-export class NgTabbySettings {
-  activateFirstTabOnInit?: boolean;
-  tabindexStart?: number;
-  controlClassName?: string;
-}
-
-export const NGTDEFAULTS: NgTabbySettings = {
-  activateFirstTabOnInit: false,
-  tabindexStart: 1,
-  controlClassName: 'ngt-control'
-};
+import { NgTabbyUtilities } from './shared/ng-tabby.utilities';
+import { NGTDEFAULTS } from './shared/ng-tabby.settings';
+import { NgTabbySettings } from './shared/ng-tabby-settings.model';
 
 @Directive({
   selector: '[ngTabby]'
@@ -19,7 +10,7 @@ export class NgTabbyDirective implements OnInit, AfterViewInit {
 
   private _ngTabby: NgTabbySettings;
 
-  constructor(private el: ElementRef, renderer: Renderer2) {
+  constructor(private el: ElementRef, private renderer: Renderer2) {
     this.ngTabby = NGTDEFAULTS;
   }
 
@@ -27,6 +18,7 @@ export class NgTabbyDirective implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    NgTabbyUtilities.markControls(this.el.nativeElement, this.renderer, this.ngTabby);
   }
 
   get ngTabby(): NgTabbySettings {
@@ -42,4 +34,6 @@ export class NgTabbyDirective implements OnInit, AfterViewInit {
     const settings = Object.assign({}, NGTDEFAULTS, value);
     this._ngTabby = settings;
   }
+
+
 }
