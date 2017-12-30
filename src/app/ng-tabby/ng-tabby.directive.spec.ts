@@ -20,7 +20,7 @@ import { NGTDEFAULTS } from './shared/ng-tabby.settings';
 export class TestNgTabbyComponent { }
 
 
-fdescribe('NgTabbyDirective', () => {
+describe('NgTabbyDirective', () => {
   let component: TestNgTabbyComponent;
   let fixture: ComponentFixture<TestNgTabbyComponent>;
   let formEl: DebugElement;
