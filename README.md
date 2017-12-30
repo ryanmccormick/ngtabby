@@ -1,6 +1,9 @@
 # NgTabby
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+## Summary
+Simple Angular (2,4,5, etc...) directive that adds tabindex to form controls or elements by classname.
+
+Documentation to come.
 
 ## Development server
 
