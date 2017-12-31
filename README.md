@@ -3,6 +3,9 @@
 ## Summary
 Simple Angular (2,4,5, etc...) directive that adds tabindex to form controls or elements by classname.
 
+## Package for NPM Instruction Credit:
+https://medium.com/@nikolasleblanc/building-an-angular-4-component-library-with-the-angular-cli-and-ng-packagr-53b2ade0701e
+
 Documentation to come.
 
 ## Development server
