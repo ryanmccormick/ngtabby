@@ -3,6 +3,12 @@
 ## Summary
 Simple Angular (2,4,5, etc...) directive that adds tabindex to form controls or elements by classname.
 
+## Installation
+1. To add to your angular project, run `npm install --save ng-tabby`.
+2. Import `NgTabbyModule` into your feature module.
+3. Add the class selector `ngt-control` to the controls that you want to have marked with a sequential tabindex.
+4. Add the directive `ngTabby` to the parent element of your form or control container.
+
 ## Package for NPM Instruction Credit:
 https://medium.com/@nikolasleblanc/building-an-angular-4-component-library-with-the-angular-cli-and-ng-packagr-53b2ade0701e
 
