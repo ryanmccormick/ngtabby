@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { NgTabbyModule } from '../ng-tabby/ng-tabby.module';
+
 import { SandboxComponent } from './sandbox.component';
+import { NgTabbyModule } from 'ng-tabby';
 
 /**
  * Shared Sandbox Components.
